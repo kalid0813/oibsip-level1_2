@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@101.2,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@101.2,300..700&family=Sixtyfour&display=swap');
+:root {
+    --primary-color: #e9c26ff6;
+    --primary-color-dark: #e9c26ff6;
+    --secondary-color: #2f945c;
+    --text-dark: black;
+    --text-light: #947373;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: var(--extra-light);
+    line-height: 1.6;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 101.2;
+    background-color: #faf5ff;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #947373;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#interests {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interests li {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.interests li:hover {
+    background-color: #e9c26ff6;
+    transform: scale(1.1);
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.image-item img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+.goback-button {
+    padding: 10px 20px;
+    background-color: #e9c26ff6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.goback-button:hover {
+    background-color: #555;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
